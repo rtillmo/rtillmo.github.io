@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Porter American Luxurywear</title>
+        <meta name="description" content="Porter American Luxurywear is a world-class clothing company dedidicated to creating high-quality clothing products. Experience the difference.">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        <!-- toggles the two menu bars to change on button click -->
+        <script type="text/javascript">
+            function myFunction(x){
+                x.classList.toggle("change");
+            }
+        </script>
+        
+        <!-- toggles responsive menu on button click -->
+        <script type="text/javascript">
+        $(document).ready(function($){
+            $( ".menu-btn" ).click(function(x){
+            $(".responsive-menu").toggleClass("expand");
+    	     })
+        })
+        </script>
+    </head>
+    <body>
+        
+    <div id="header">
+        
+        <div id="brandwrap">
+            <a href="index.html">    
+                <img src="Images/porterlogo_white.png" alt="Porter Logo"/>  
+                <div id="brandname">
+                    <p>Porter</p>
+                    <p id="brandsub">America's Luxury Brand</p>
+                </div>
+            </a>
+        </div>
+        
+            <div id="menu-btn" class="menu-btn" onclick="myFunction(this)">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+            </div>
+        
+            <div id="nav" class="responsive-menu">
+                <ul class="nav">
+                    <li><a href="index.html" class="active">Home</a>
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products</a>
+                        <div class="dropdown-content" class="open-menu-link">
+                            <a href="#">Clothing</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Jewelry</a>
+                        </div>
+                        <div class="open-menu-link open visible hide"></div>
+                        <div class="open-menu-link close hide"></div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="silver"></div>
+        <div class="featured">
+            <div class="contentwrap lighttext">
+                <h1>Luxury Style Tailored Just For You</h1>
+                <h2>Let us help build the luxury wardrobe you are searching for, so you can dress in style for whatever occasion.</h2>
+                <div class="whitebutton">Shop Now</div>
+            </div>
+        </div>
+        
+        <div class="whitecontent">
+            <div class="wrap">
+                <h1>ABOUT PORTER</h1>
+                <h2>Established in 1990, Porter has always stood for providing quality men's products and world-class customer service. As a leader in the new age of style and luxury, we create our story through the customers that choose to experience the difference and satisfaction that our products deliver.</h2>
+            </div>
+        </div>
+        
+        <div class="aboutfeatured"></div>
+        
+        <div class="whitecontent">
+            <div class="wrap">
+                <h1>CRAFTMANSHIP</h1>
+                <h2>Quality. Comfort. Personal. We only source the best materials when designing our garments. Each fine detail is meticulously planned and constructed to ensure durability and comfort. Porter is dedicated to providing a world-class, premium experience and maintaining our standard of excellence recongnized by our customers.</h2>
+            </div>
+        </div>
+        
+        <div class="blogfeatured"></div>
+        
+        <div class="whitecontent">
+            <div class="wrap">
+                <img src="Images/porterlogo_black.png" alt="PorterLogoBlack"/>
+                <h2>Need Help? Feel free to contact us with your questions and concerns.</h2>
+                <div class="darkbutton"><a href="contact.html">Contact Us</a></div>
+            </div>
+        </div>
+    <div id="footer"><p>©2017 Revised by Rudolph Tillmon</p></div>
+    </body>
+</html>
