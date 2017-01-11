@@ -1,0 +1,318 @@
+@import url("reset.css");
+    
+body{
+  font-family: "Avenir", "Century Gothic", sans-serif;  
+}
+
+h1{
+
+    margin: 25px 0;
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-family: "Papyrus", "Avenir", "Century Gothic", sans-serif;
+}
+
+h2{
+    font-size: 24px;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    font-family: "Papyrus", "Avenir", "Century Gothic", sans-serif;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5em;  
+}
+
+#wrap{
+    margin: 0;
+    
+}
+
+#logo header{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+
+#logo_header img{
+    width: 20%;
+    height: auto;
+    margin: 5px 10px;
+}
+
+#telephone{
+    width: 20%;
+    float: right;
+    height: auto;
+    margin: 2% 10px;
+    color: #555;
+    text-align: right;
+}
+#footer p{
+    background-color: #6AA311;
+    font-size: 12px;
+    padding: 5px 10px;
+    height 10px;
+    color: #FFF;
+    
+}
+#background_img{
+    background-image: url(Images/vegetables_1280x853.jpg);
+    background-size: cover;
+    height: 600px;
+    padding: 75px 50px;
+}
+
+
+#content_wrap{
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    width: 50%;
+    /*max-width: 550px;*/
+    height: auto;
+    border-radius: 5px;
+    display:block;
+    color: #FFF;
+    background-color: #a8a8a8;
+}
+
+#form_wrap{
+    float: right;
+    margin: 10px;
+    padding: 25px;
+    width: 25%;
+    min-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    color: #FFF;
+    /*background-color: darkgrey;*/
+}
+
+input[type=text], select {
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 10px 0 40px 0; 
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+input[type=radio] {
+    margin: 10px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+
+}
+
+input[type=submit] {
+    width: 100%;
+    height: 50px;
+    background-color: #1a654e;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Papyrus", "Avenir", "Century Gothic", sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: #6AA311;
+}
+
+
+/*------------------------------Media Min 400px-----------------------------------*/
+
+@media screen and (min-width: 400px){
+
+h1{font-size: 32px;}
+    
+h2{font-size: 20px;}
+    
+p{font-size: 14px;}
+
+#logo_header img{
+    width: 50%;
+}
+#telephone{
+    width: 30%;
+    margin: 5% 10px;
+}        
+#background_img{
+    height: 1100px;
+    padding: 75px 10%;
+    background-image: linear-gradient(rgba(20,20,20, .3), rgba(20,20,20, .3)), url(Images/vegetables_1280x853.jpg);    
+}
+    
+#content_wrap{
+    float: none;
+    margin: 0px auto;
+    padding: 25px;
+    width: 80%;
+    background-color: #6AA311;
+}
+
+#form_wrap{
+    float: none;
+    margin: 25px auto;
+    padding: 25px;
+    width: 90%;
+    /*background-color: darkgrey;*/
+}
+
+input[type=text], select {
+    width: 100%;
+    height: 40px;
+    padding: 12px 20px;
+    margin: 10px 0 20px 0; 
+}
+
+input[type=radio] {
+    margin: 10px 10px;
+}   
+    
+/*------------------------------Media Min 500px-----------------------------------*/
+@media screen and (min-width: 500px){
+    h1{font-size: 32px;}
+
+    h2{font-size: 22px;}
+
+    p{font-size: 16px;}
+    
+}
+
+/*------------------------------Media Min 700px-----------------------------------*/
+@media screen and (min-width: 700px){
+
+    h2{
+        font-size: 26px;
+        margin-top: 40px;
+    }
+    #background_img{
+        height: 980px;
+        padding: 75px 10%;
+        background-image: linear-gradient(rgba(20,20,20, .3), rgba(20,20,20, .3)), url(Images/vegetables_1280x853.jpg);    
+    }
+
+    #content_wrap{
+        padding: 25px;
+        width: 90%;
+        background-color: darkgrey;
+    }
+
+    #form_wrap{
+        padding: 25px;
+        width: 90%;
+        border-radius: 5px;
+        color: #FFF;
+        /*background-color: darkgrey;*/
+    }
+
+    input[type=text], select {
+        width: 100%;
+        height: 50px;
+        padding: 12px 20px;
+    }
+}
+/*------------------------------Media Min 840px-----------------------------------*/
+@media screen and (min-width: 840px){
+    h2{
+        font-size: 26px;
+        margin-top: 0;
+    }
+
+    #logo header{
+        width: 100%;
+        height: 80px;
+        padding: 10px;
+    }
+
+    #logo_header img{
+        width: 20%;
+        height: auto;
+        margin: 5px 10px;
+    }
+
+    #telephone{
+        width: 20%;
+        float: right;
+        height: auto;
+        margin: 2% 10px;
+        color: #555;
+        text-align: right;
+    }
+    #footer p{
+        background-color: #6AA311;
+        font-size: 12px;
+        padding: 5px 10px;
+        height 10px;
+        color: #FFF;
+
+    }
+    #background_img{
+        background-image: url(Images/vegetables_1280x853.jpg);
+        background-size: cover;
+        height: 600px;
+        padding: 75px 50px;
+    }
+
+
+    #content_wrap{
+        float: left;
+        margin: 10px;
+        padding: 25px;
+        width: 50%;
+        display:block;
+        color: #FFF;
+        background-color: darkgrey;
+    }
+
+    #form_wrap{
+        float: right;
+        margin: 10px;
+        padding: 25px;
+        width: 25%;
+        min-width: 200px;
+        border-radius: 5px;
+        color: #FFF;
+        /*background-color: darkgrey;*/
+    }
+
+    input[type=text], select {
+        width: 100%;
+        height: 50px;
+        padding: 12px 20px;
+        margin: 10px 0 40px 0; 
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        height: 50px;
+        background-color: #1a654e;
+        color: white;
+        padding: 14px 20px;
+        margin: 20px 0;
+        border: none;
+        border-radius: 4px;
+        font-size: 18px;
+        cursor: pointer;
+        font-family: "Papyrus", "Avenir", "Century Gothic", sans-serif;
+    }
+}
