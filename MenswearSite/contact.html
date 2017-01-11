@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Porter American Luxurywear</title>
+        <meta name="description" content="Porter American Luxurywear is a world-class clothing company dedidicated to creating high-quality clothing products. Experience the difference.">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        <!-- toggles the two menu bars to change on button click -->
+        <script type="text/javascript">
+            function myFunction(x){
+                x.classList.toggle("change");
+            }
+        </script>
+        
+        <!-- toggles responsive menu on button click -->
+        <script type="text/javascript">
+        $(document).ready(function($){
+            $( ".menu-btn" ).click(function(x){
+            $(".responsive-menu").toggleClass("expand");
+    	     })
+        })
+        </script>
+    </head>
+    
+    <body>
+        
+    <div id="header">
+        
+        <div id="brandwrap">
+            <a href="index.html">    
+                <img src="Images/porterlogo_white.png" alt="Porter Logo"/>  
+                <div id="brandname">
+                    <p>Porter</p>
+                    <p id="brandsub">America's Luxury Brand</p>
+                </div>
+            </a>
+        </div>
+        
+            <div id="menu-btn" class="menu-btn" onclick="myFunction(this)">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+            </div>
+        
+            <div id="nav" class="responsive-menu">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a>
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products</a>
+                        <div class="dropdown-content" class="open-menu-link">
+                            <a href="#">Clothing</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Jewelry</a>
+                        </div>
+                        <div class="open-menu-link open visible hide"></div>
+                        <div class="open-menu-link close hide"></div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="silver"></div>
+        
+        <div class="contactpg">
+            <div class="form">
+                <img src="Images/porterlogo_black.png" alt="Porter Logo" />    
+                <p>Porter is dedicated to providing exceptional world-class service and greatly value your inquires and feedback. Please be sure to fill and submit all required fields. Our customer service department will get back to you as soon as possible.</p>
+            
+                <form action="mailto:rudolph.tillmon@icloud.com" method="post" enctype="text/plain">
+                    <p><small>* indicates required fields</small></p>
+                    <div class="column1">
+                        <label for="name">First Name* :</label><br>
+                        <input type="text" name="FirstName" placeholder="First Name" required/>
+
+                        <label for="name">Last Name* :</label><br>
+                        <input type="text" name="LastName" placeholder="Last Name" required/>
+
+                        <label for="name">E-mail* :</label><br>
+                        <input type="text" name="Email" placeholder="Email" required/>
+                    </div>
+                    <div class="column2">
+                        <label for="name">Zip/Postal Code* :</label><br>
+                        <input type="text" name="Zip Code" placeholder="Zip/Postal Code"/>
+
+                        <label for="name">Phone Number :</label><br>
+                        <input type="text" name="Phone Number" placeholder="Phone Number"/>
+
+                        <label for="subject">Subject* :</label><br>
+                        <select name="subject">
+                            <option value="$$$$$" selected="selected"></option>
+                            <option value="Order Status">Order Status</option>
+                            <option value="Order Change">Order Change</option>
+                            <option value="Returns">Returns</option>
+                            <option value="Accont Information">My Account Information</option>
+                            <option value="Shipping">Shipping</option>
+                            <option value="Placing an Order">Placing an Order</option>
+                            <option value="Payment and Billing">Payment and Billing</option>
+                            <option value="Promotions">Promotions</option>
+                            <option value="Gift Certificates">Gift Certificates</option>
+                            <option value="Product Questions">Product Questions</option>
+                            <option value="Privacy Notice Questions">Privacy Notice Questions</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="message">
+                    <label for="message">How May We Assist You?* :</label>
+                    <textarea rows="50" cols="40" name="message" value="message here" placeholder="Type Message Here"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit" onclick="alert('Thank You. Your form was submitted to Porter Customer Service.')" cursor="pointer"/>
+                    </div>
+                </form>
+            </div>
+        </div>        
+
+    <div id="footer"><p>©2017 Revised by Rudolph Tillmon</p></div>
+    </body>
+</html>
