@@ -9,6 +9,9 @@ body{
     margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+}
 /*------------------- Header, Logo, & Brand Name -----------------------*/
 
 
@@ -230,34 +233,28 @@ h2{
     padding: 10px;
     border: 5px solid #FFF;
     font-size: 1.5em;
-    text-decoration: none;
     text-align: center;
 }
 
 .whitebutton:hover{
     background-color: #777;
-    border: 5px solid #bbb;
     color: #FFF;
 }
 
 .darkbutton{
-    color: #333;
     display: block;
     width: 150px;
     margin: 0 auto;
     margin-top: 5%;
     padding: 10px;
     border: 5px solid #333;
-    font-size: 1.5em;
     text-align: center;
+    color: #333;
+    font-size: 1.5em;
 }
-    .darkbutton a{
-        text-decoration: none;
-    }
 
 .darkbutton:hover{
-    background-color: #555;
-    border: 5px solid #555;
+    background-color: #888;
     color: #FFF;
 }
 
